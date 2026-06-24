@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SkyNET: High-Lift Airfoil Optimization Framework &middot; Ashray Saxena</title>
+<meta name="description" content="An inverse-design and optimization framework that synthesises high-lift airfoils for blown-wing and high-aspect-ratio unmanned aircraft." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="mono">AS</span> Ashray Saxena</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="entrepreneurship.html">Entrepreneurship</a>
+      <a href="experience.html">Experience</a>
+      <a href="mailto:f20231043@pilani.bits-pilani.ac.in" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container" style="max-width:900px;">
+    <a class="back-link" href="projects.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Back to Projects
+    </a>
+    <p class="kicker">Project &middot; LAT Aerospace</p>
+    <h1 style="max-width:20ch;">SkyNET: High-Lift Airfoil Optimization Framework</h1>
+    <p class="lede" style="margin-top:1.1rem;">Aeromodelling and avionics work at LAT Aerospace.</p>
+    <a class="btn btn-primary" style="margin-top:1.6rem;" href="reports/report_aero.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:16px;height:16px;"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> Download the full report (PDF)</a>
+  </div>
+</section>
+
+<section style="padding-top:clamp(28px,4vw,48px);">
+  <div class="container" style="max-width:900px;">
+    <div class="facts" style="margin-bottom:clamp(28px,4vw,44px);"><div class="fact"><div class="k">Domain</div><div class="v">Unmanned high-lift</div></div><div class="fact"><div class="k">Method</div><div class="v">Inverse design</div></div><div class="fact"><div class="k">Targets</div><div class="v">CL0 and CD0</div></div><div class="fact"><div class="k">Regime</div><div class="v">Blown wing, high AR</div></div></div>
+    <div class="hero-figure"><img src="assets/img/lat_sweep.png" alt="SkyNET: High-Lift Airfoil Optimization Framework" /></div>
+    <div class="prose" style="margin-top:clamp(28px,4vw,44px);">
+  <h2>What it does</h2>
+  <p>SkyNET is an airfoil optimization framework built for the high lift configurations that unmanned aircraft need at low speed. Instead of guessing shapes and testing them, it works backwards: <span class="highlight">inverse design</span> generates aerodynamic profiles from the lift and drag coefficients you actually want, then computational solvers automate the synthesis of airfoils for blown wing and high aspect ratio flight.</p>
+  <p>The sweep above is a parametric study from the framework, comparing high lift configurations against deflection and gap settings to find the best performing geometry.</p>
+  <h2>From profile to deployable flap</h2>
+  <p>A high lift airfoil is only useful if it can be built and deployed, so I also worked the mechanism side, designing slotted fowler flap deployment paths and Coanda surfaces and verifying their kinematics through the full range of motion.</p>
+  <div class="figure-grid"><figure class="figure"><div class="frame"><img src="assets/img/lat_fowler.png" alt="A single-slotted fowler flap with a Coanda vane, shown retracted, in transit, and fully deployed." /></div><figcaption>A single-slotted fowler flap with a Coanda vane, shown retracted, in transit, and fully deployed.</figcaption></figure><figure class="figure"><div class="frame"><img src="assets/img/lat_flap_result.png" alt="A stowed flap nested inside the parent airfoil, with the lower surface proven inflection-free by construction." /></div><figcaption>A stowed flap nested inside the parent airfoil, with the lower surface proven inflection-free by construction.</figcaption></figure></div>
+  <figure class="figure"><div class="frame"><img src="assets/img/lat_throat.png" alt="A throat map used to keep the slot geometry well behaved as the flap deploys." /></div><figcaption>A throat map used to keep the slot geometry well behaved as the flap deploys.</figcaption></figure>
+    </div>
+    <div class="detail-chips"><span class="chip">Inverse design</span><span class="chip">High lift</span><span class="chip">Blown wing</span><span class="chip">XFOIL / SU2</span><span class="chip">Optimization</span></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="big">Let's build something.</div>
+        <p class="muted" style="max-width:34ch;">Open to research collaborations, internships and conversations about aerospace, propulsion and anything at the edges of engineering.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="experience.html">Experience &amp; Leadership</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:f20231043@pilani.bits-pilani.ac.in">Email</a>
+        <a href="https://www.linkedin.com/in/ashraysaxena/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/i4mGr0ot" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>&copy; <span id="year">2026</span> Ashray Saxena</span>
+      <span>Built with care &middot; BITS Pilani</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

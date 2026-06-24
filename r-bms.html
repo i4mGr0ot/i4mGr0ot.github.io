@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liquid-Cooled Battery Thermal System &middot; Ashray Saxena</title>
+<meta name="description" content="A coupled electrochemical and thermal COMSOL model of a liquid-cooled 14S4P battery pack, holding cell-to-cell temperature uniformity under high discharge." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="mono">AS</span> Ashray Saxena</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="entrepreneurship.html">Entrepreneurship</a>
+      <a href="experience.html">Experience</a>
+      <a href="mailto:f20231043@pilani.bits-pilani.ac.in" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container" style="max-width:900px;">
+    <a class="back-link" href="research.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Back to Research
+    </a>
+    <p class="kicker">Research &middot; Thermal Management</p>
+    <h1 style="max-width:20ch;">Liquid-Cooled Battery Thermal System</h1>
+    <p class="lede" style="margin-top:1.1rem;">COMSOL Multiphysics study, modelled on the Pininfarina Battista pack.</p>
+    <a class="btn btn-primary" style="margin-top:1.6rem;" href="reports/report_battery.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:16px;height:16px;"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg> Download the full report (PDF)</a>
+  </div>
+</section>
+
+<section style="padding-top:clamp(28px,4vw,48px);">
+  <div class="container" style="max-width:900px;">
+    <div class="facts" style="margin-bottom:clamp(28px,4vw,44px);"><div class="fact"><div class="k">Pack</div><div class="v">8 modules, 14S4P</div></div><div class="fact"><div class="k">Source</div><div class="v">Pininfarina Battista</div></div><div class="fact"><div class="k">Physics</div><div class="v">Electrochemistry + cooling</div></div><div class="fact"><div class="k">Spread</div><div class="v">~12&deg;C cell-to-cell</div></div></div>
+    <div class="hero-figure"><img src="assets/img/research_bms.png" alt="Liquid-Cooled Battery Thermal System" /></div>
+    <div class="prose" style="margin-top:clamp(28px,4vw,44px);">
+  <h2>The setup</h2>
+  <p>This is a coupled electrochemical and thermal model of a high power battery energy storage system, an eight module, 14S4P liquid cooled pack drawn from the Pininfarina Battista electric hypercar. The cell model carries the <span class="highlight">ohmic, activation and concentration losses</span>, which enter the heat equation as sources, and the cooling is modelled with nonisothermal turbulent and pipe flow in COMSOL Multiphysics.</p>
+  <div class="figure-grid"><figure class="figure"><div class="frame"><img src="assets/img/bms_voltage.png" alt="Cell voltage and applied current through a demanding discharge cycle." /></div><figcaption>Cell voltage and applied current through a demanding discharge cycle.</figcaption></figure><figure class="figure"><div class="frame"><img src="assets/img/bms_soc.png" alt="State of charge evolving across the same cycle." /></div><figcaption>State of charge evolving across the same cycle.</figcaption></figure></div>
+  <h2>What it shows</h2>
+  <p>The full pack temperature field at the top of the page holds the spread to roughly twelve degrees between the coolest and hottest cells. That kind of cell to cell uniformity is exactly what a high discharge, fast charging pack needs to stay safe and to age evenly.</p>
+  <figure class="figure"><div class="frame"><img src="assets/img/bms_soh.png" alt="Modelled state of health decay, the slow capacity fade that thermal management is meant to slow down." /></div><figcaption>Modelled state of health decay, the slow capacity fade that thermal management is meant to slow down.</figcaption></figure>
+    </div>
+    <div class="detail-chips"><span class="chip">COMSOL</span><span class="chip">BESS</span><span class="chip">Electrochemistry</span><span class="chip">Conjugate heat transfer</span></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="big">Let's build something.</div>
+        <p class="muted" style="max-width:34ch;">Open to research collaborations, internships and conversations about aerospace, propulsion and anything at the edges of engineering.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="experience.html">Experience &amp; Leadership</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:f20231043@pilani.bits-pilani.ac.in">Email</a>
+        <a href="https://www.linkedin.com/in/ashraysaxena/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/i4mGr0ot" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>&copy; <span id="year">2026</span> Ashray Saxena</span>
+      <span>Built with care &middot; BITS Pilani</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

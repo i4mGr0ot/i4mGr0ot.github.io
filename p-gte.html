@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FADEC and Turbojet Simulation Stack &middot; Ashray Saxena</title>
+<meta name="description" content="A modular FADEC for turbojet engines on an STM32 platform, a C++ software-in-the-loop engine simulator, and a hybrid UAV powertrain." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="mono">AS</span> Ashray Saxena</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="entrepreneurship.html">Entrepreneurship</a>
+      <a href="experience.html">Experience</a>
+      <a href="mailto:f20231043@pilani.bits-pilani.ac.in" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container" style="max-width:900px;">
+    <a class="back-link" href="projects.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Back to Projects
+    </a>
+    <p class="kicker">Project &middot; LAT Aerospace &middot; Gas Turbine Engine Team</p>
+    <h1 style="max-width:20ch;">FADEC and Turbojet Simulation Stack</h1>
+    <p class="lede" style="margin-top:1.1rem;">Gas turbine engine team at LAT Aerospace.</p>
+  </div>
+</section>
+
+<section style="padding-top:clamp(28px,4vw,48px);">
+  <div class="container" style="max-width:900px;">
+    <div class="facts" style="margin-bottom:clamp(28px,4vw,44px);"><div class="fact"><div class="k">Controller</div><div class="v">STM32 Nucleo H743ZI2</div></div><div class="fact"><div class="k">Simulator</div><div class="v">C++ software-in-the-loop</div></div><div class="fact"><div class="k">Powertrain</div><div class="v">Microturbojet + EDF</div></div><div class="fact"><div class="k">Platform</div><div class="v">130 kg model aircraft</div></div></div>
+    <div class="gradient-hero"><div class="ttl">FADEC</div><div class="sub">Full Authority Digital Engine Control</div></div>
+    <div class="prose" style="margin-top:clamp(28px,4vw,44px);">
+  <h2>Controlling a jet engine</h2>
+  <p>A Full Authority Digital Engine Controller is the brain of a jet engine, the unit that schedules fuel and protects the engine across its whole operating envelope. I am building a <span class="highlight">modular FADEC</span> for turbojet engines on an STM32 Nucleo H743ZI2.</p>
+  <h2>Test it before you burn fuel</h2>
+  <p>To develop and tune the controller without risking hardware, I built a C++ software in the loop framework that simulates the turbojet, so the FADEC logic can be exercised against a virtual engine first.</p>
+  <h2>Hybrid powertrain</h2>
+  <p>On the propulsion side I worked on a hybrid UAV powertrain that pairs microturbojets with electric ducted fans on a 130 kilogram model aircraft, blending the endurance of a turbine with the responsiveness of electric thrust.</p>
+    </div>
+    <div class="detail-chips"><span class="chip">Embedded C++</span><span class="chip">STM32</span><span class="chip">Software-in-the-loop</span><span class="chip">Hybrid powertrain</span><span class="chip">Controls</span></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="big">Let's build something.</div>
+        <p class="muted" style="max-width:34ch;">Open to research collaborations, internships and conversations about aerospace, propulsion and anything at the edges of engineering.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="experience.html">Experience &amp; Leadership</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:f20231043@pilani.bits-pilani.ac.in">Email</a>
+        <a href="https://www.linkedin.com/in/ashraysaxena/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/i4mGr0ot" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>&copy; <span id="year">2026</span> Ashray Saxena</span>
+      <span>Built with care &middot; BITS Pilani</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
